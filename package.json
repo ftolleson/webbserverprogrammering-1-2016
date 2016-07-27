@@ -1,0 +1,24 @@
+{
+  "name": "webbserverprogrammering-1-2016",
+  "version": "1.0.0",
+  "description": "webbserverprogrammering-1\r =========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itpastorn/webbserverprogrammering-1-2016.git"
+  },
+  "keywords": [
+    "thelin",
+    "php",
+    "webbserverprogrammering"
+  ],
+  "author": "gunther@keryx.se",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itpastorn/webbserverprogrammering-1-2016/issues"
+  },
+  "homepage": "https://github.com/itpastorn/webbserverprogrammering-1-2016#readme"
+}
