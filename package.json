@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/itpastorn/webbserverprogrammering-1-2016/issues"
   },
-  "homepage": "https://github.com/itpastorn/webbserverprogrammering-1-2016#readme"
+  "homepage": "https://github.com/itpastorn/webbserverprogrammering-1-2016#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-a11y": "^0.1.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-html-validator": "0.0.5",
+    "gulp-util": "^3.0.7",
+    "gulp-w3c-css": "^1.0.1"
+  }
 }
