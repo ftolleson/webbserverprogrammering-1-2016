@@ -6,9 +6,10 @@ var gulp = require('gulp'),
 gulp.task('default', function () {
     return gulp.src('**/*.php')
         // Validate files using PHP Code Sniffer
+        // TODO Exclude HtmlPurifier, etc
         .pipe(phpcs({
             bin: 'C:/Users/gunth/AppData/Roaming/Composer/vendor/bin/phpcs',
-            standard: 'PSR2',
+            standard: 'PSR1',
             warningSeverity: 0
         }))
         // Log all problems that was found

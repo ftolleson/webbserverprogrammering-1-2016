@@ -5,21 +5,28 @@
 Global rules
 ====================================================
 */
+html {
+	/* Keep content from the very edge of narrow screens*/
+    margin: 2%;
+}
 body {
     margin: auto;
     max-width: 860px;
     font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
     font-size: 100%;
 }
+/*
 section, header, footer {
-    /* outline: red 1px solid !important; */
+    outline: red 1px solid !important;
 }
+*/
 p {
     -webkit-hyphen: auto;
        -moz-hyphen: auto;
         -ms-hyphen: auto;
             hyphen: auto;
 }
+/* TODO Varför är det barnselektorer? Framtidssäkring för att inte påverka andra? */
 .startpage > header,
 .subpage > header {
     text-align: center;
@@ -41,7 +48,7 @@ h1 {
     /* outline: 1px dotted blue; */
     margin: 0; /* Check for sub-pages */
 }
-h1:first-letter {
+h1::first-letter {
     color: #00af64;
 }
 /*
@@ -115,6 +122,7 @@ Start page rules
     width: 235px;
     height: 198px;
 }
+/* Varför inte bara .startpage h1 */
 .startpage > header h1 {
     font-size: 500%;
 }
@@ -131,11 +139,6 @@ p.tagline  {
 }
 .startpage > section p {
      padding: 1ch; /* Just för att inte alla stödjer ch */
-}
-footer {
-    margin-top: 3em;
-    text-align: center;
-    color: #999;
 }
 /*
 ====================================================
@@ -179,11 +182,13 @@ Main site navigation
 Page footer rules
 ==================================================================================
 */
-/* footer as such has display: flex */
 
-footer * {
-    flex: auto;
+footer {
+    margin-top: 3em;
+    text-align: center;
+    color: #999;
 }
+/* TODO Check usage */
 footer a {
     font-size: smaller;
 }
